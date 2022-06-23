@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".contactsList"
+    android:background="@drawable/base_background"
+    >
+
+    <TextView
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#075e54"
+        android:gravity="center"
+        android:text="whatsapp"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="#2D322D"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/refreshLayout" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/backtologin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:background="@drawable/row_background"
+        android:backgroundTint="#7ECFC6"
+        android:src="@drawable/ic_login_gray"
+        android:tint="@color/black"
+        app:fabSize="mini"
+        app:maxImageSize="30dp"
+        android:foregroundGravity="center"
+        app:layout_constraintStart_toStartOf="@+id/toolBar"
+        app:layout_constraintTop_toTopOf="parent">
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-40dp"
+        tools:layout_editor_absoluteY="-82dp">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/lstPosts"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="55dp" />
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_add_person"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:backgroundTint="#075e54"
+        android:background="@drawable/row_background"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/settingBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:src="@drawable/ic_baseline_settings_24"
+        android:background="@drawable/row_background"
+        android:backgroundTint="#075e54"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/refreshLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

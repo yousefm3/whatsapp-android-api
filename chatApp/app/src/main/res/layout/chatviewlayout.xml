@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/base_background"
+    android:id="@+id/layout_"
+    android:padding="5dp"
+
+    >
+
+    <RelativeLayout
+        android:id="@+id/specific_contact"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="-5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/lastMessage"
+            android:layout_alignTop="@+id/lastMessage"
+            android:layout_alignEnd="@+id/lastMessageDate"
+            android:layout_marginStart="-5dp"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="10dp"
+            android:text="_________________________________"
+            android:textColor="#B3ACAC" />
+
+
+        <TextView
+            android:id="@+id/nameofuser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/imageviewofuser"
+            android:text="Name Display Here"
+            android:textColor="#0b0b0b"
+            android:textSize="20sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageviewofuser"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/defaultprofile" />
+
+
+        <TextView
+            android:id="@+id/lastMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nameofuser"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@id/imageviewofuser"
+            android:textColor="#6a6a6a"
+            android:textSize="15sp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/lastMessageDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="280dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#6a6a6a"
+            android:textSize="20sp">
+
+        </TextView>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.1dp"
+            android:layout_below="@id/imageviewofuser"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="-5dp"
+            android:layout_toRightOf="@id/imageviewofuser"
+            android:background="#a6a6a6"
+            android:backgroundTint="#a6a6a6" />
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+</RelativeLayout>

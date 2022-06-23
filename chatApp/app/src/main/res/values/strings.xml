@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">chatApp</string>
+    <string name="sign_in"><b><u>Sign in</u></b></string>
+    <string name="register"><b><u>Register</u></b></string>
+    <string name="type_a_message">Type a message</string>
+    <string name="BaseUrl">http://10.0.2.2:7008/api/</string>
+</resources>
